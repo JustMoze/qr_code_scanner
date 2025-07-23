@@ -46,10 +46,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_21
         targetCompatibility JavaVersion.VERSION_21
         coreLibraryDesugaringEnabled true
-
-        javaCompiler = javaToolchains.compilerFor {
-            languageVersion = JavaLanguageVersion.of(21)
-        }
     }
 
     if (project.android.hasProperty('namespace')) {
